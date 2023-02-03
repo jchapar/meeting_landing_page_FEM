@@ -4,8 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Boiler Plate | Tailwindcss</title>
+    <title>Meet Landing Page | Tailwindcss</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Nav -->
+    <nav id="nav" class="flex items-center justify-center w-full p-8 mb-10">
+      <img src="assets/logo.svg" alt="Logo" />
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+      <div class="container mx-auto w-full m-0 lg:hidden">
+        <img src="assets/tablet/image-hero.png" alt="Header Image" class="lg:hidden" />
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Section: Hero -->
+      <section id="hero" class="py-20">
+        <div class="container mx-auto">
+          <!-- Left Image -->
+          <!-- Content -->
+          <div class="flex flex-col items-center justify-center space-y-6">
+            <h1 class="font-black text-5xl text-center">Group Chat for Everyone</h1>
+            <p class="font-light text-[20px] text-center max-w-sm text-grey leading-7">
+              Meet makes it easy to connect with others face-to-face virtually and collborate across
+              any device.
+            </p>
+            <!-- Button Container -->
+            <div class="flex flex-col items-center justify-center space-y-5">
+              <a
+                href="#"
+                class="bg-teal text-white py-4 px-10 rounded-full font-black text-[18px] transition hover:scale-105"
+                >Download <span class="text-lightBlue">v1.3</span></a
+              >
+              <a
+                href="#"
+                class="bg-purple text-white py-4 px-8 rounded-full font-black text-[18px] transition hover:scale-105"
+                >What is it?</a
+              >
+            </div>
+          </div>
+          <!-- Right image -->
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
