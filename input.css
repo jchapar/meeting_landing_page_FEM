@@ -2,5 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+#footer {
+  background-image: url('../assets/mobile/image-footer.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+#footer::after {
+  content: '';
+  background-color: #4d96a9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.7;
+}
+
 @media screen(md) {
+  #footer {
+    background-image: url('../assets/tablet/image-footer.jpg');
+  }
+}
+
+@media screen(lg) {
+  #footer {
+    background-image: url('../assets/desktop/image-footer.jpg');
+    height: 350px;
+  }
 }
